@@ -1,9 +1,6 @@
 const express = require('express');
 const router  = express.Router();
-// const {checkUser} = require('../public/scripts/helpers');
 const { getUserById, getMapByType } = require('../db/queries');
-
-
 
 module.exports = (db) => {
 

@@ -21,12 +21,10 @@ module.exports = (db) => {
   router.post('/:id', (req,res) => {
     const userId = req.session.userId;
     const mapId = req.params.id;
-    console.log("test", req.params.favId)
 
     addFavs(userId, mapId)
-      .then(data => {
-        res.status(200).send("okiiieee")
-        // res.redirect(`/favs/${mapId}`);
+      .then(res => {
+        res.status(200).send("OK")
       })
       .catch(err => {
         res
@@ -40,9 +38,8 @@ module.exports = (db) => {
     console.log("delete listener", favId)
 
     deleteMyFav(favId)
-      .then(data => {
+      .then(res => {
         res.status(200).end()
-        // res.redirect(`/map/${mapId}`)
       })
       .catch(err => {
         res.

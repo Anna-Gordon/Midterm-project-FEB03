@@ -50,8 +50,6 @@ $(document).ready(function() {
   })
 
   $(".delete-icon").on("click", function() {
-    // alert("Hello! I am an alert box!!");
-
     const $this = $(this).data('favid')
     console.log($this);
 

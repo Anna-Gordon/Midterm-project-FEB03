@@ -17,7 +17,6 @@ module.exports = (db) => {
     } else {
       user = null;
     }
-    // console.log(typeof user)
 
     getMapsByUserId(userId)
       .then(data => {
