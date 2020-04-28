@@ -6,11 +6,11 @@ A web app that allows users to collaboratively create maps. Each map belonges to
 
 Home page
 
-!["Home Page"]()
+!["Home Page"](https://github.com/Anna-Gordon/Midterm-project-FEB03/blob/master/docs/homePage.png?raw=true)
 
 Edit map page
 
-!["Edit map page"]()
+!["Edit map page"](https://github.com/Anna-Gordon/Midterm-project-FEB03/blob/master/docs/editMapPage.png?raw=true)
 
 ## Built With
 - HTML, SASS
