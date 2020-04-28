@@ -1,6 +1,6 @@
 const express = require('express');
 const router  = express.Router();
-const { deleteMyPoint, mapsWithAssociatedPoints, getPointsByUserId, addMyPoints } = require('../db/queries')
+const { deleteMyPoint, addMyPoints } = require('../db/queries')
 
 module.exports = (db) => {
   router.get("/", (req, res) => {
@@ -22,7 +22,6 @@ module.exports = (db) => {
     deleteMyPoint(pointId)
       .then(data => {
         res.status(200).end()
-        // res.redirect(`/map/${mapId}`)
       })
       .catch(err => {
         res.

@@ -92,7 +92,6 @@ background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, F
 
 
 #profile-container {
-  // background-color: darkseagreen;
   display: flex;
   justify-content: space-evenly;
 }
@@ -121,16 +120,10 @@ background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, F
   justify-content: space-around;
 }
 
-#created-list {
-  // padding-left:1em;
-}
-
 .fav-item  {
   font-size: 30px;
   transition: 300ms;
   &:hover {
-    // -webkit-text-stroke-width: 1px;
-    //   color: blueviolet;
     font-weight: 600;
   }
 

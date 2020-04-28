@@ -1,8 +1,6 @@
 const express = require('express');
 const router  = express.Router();
-const { getUserById, getMapNameById, mapsWithAssociatedPoints } = require('../db/queries');
-
-
+const { getUserById, mapsWithAssociatedPoints } = require('../db/queries');
 
 module.exports = (db) => {
 

@@ -23,9 +23,8 @@ module.exports = (db) => {
     const mapId = req.params.id;
 
     addFavs(userId, mapId)
-      .then(data => {
-        res.status(200).send("okiiieee")
-        // res.redirect(`/favs/${mapId}`);
+      .then(res => {
+        res.status(200).send("OK")
       })
       .catch(err => {
         res
@@ -38,9 +37,8 @@ module.exports = (db) => {
     const favId = req.params.id
 
     deleteMyFav(favId)
-      .then(data => {
+      .then(res => {
         res.status(200).end()
-        // res.redirect(`/map/${mapId}`)
       })
       .catch(err => {
         res.

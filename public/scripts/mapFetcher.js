@@ -45,7 +45,6 @@ function initMap() {
         nameMarker.addListener('click', function () {
           infoWin.open(map, nameMarker);
         });
-
       }
     });
   });
